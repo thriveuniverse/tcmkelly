@@ -6,7 +6,7 @@ import './Experience.css';
 
 export const Experience = () => {
     const { t, i18n } = useTranslation();
-    const lang = i18n.language as 'fr' | 'en';
+    const lang = (i18n.language && i18n.language.startsWith('fr')) ? 'fr' : 'en';
 
     return (
         <div className="experience-page container animate-fade-in">

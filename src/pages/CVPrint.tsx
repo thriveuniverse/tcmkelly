@@ -10,7 +10,7 @@ import './CVPrint.css';
 
 export const CVPrint = () => {
     const { i18n } = useTranslation();
-    const lang = i18n.language as 'fr' | 'en';
+    const lang = (i18n.language && i18n.language.startsWith('fr')) ? 'fr' : 'en';
 
     const getIcon = (iconName?: string) => {
         switch (iconName) {
