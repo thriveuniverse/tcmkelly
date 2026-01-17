@@ -1,0 +1,150 @@
+.sports-page {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+}
+
+.sports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.full-width-section {
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+}
+
+.section-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.section-card:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(0, 170, 255, 0.3);
+}
+
+.section-card.featured-gold {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+    border: 1px solid rgba(249, 115, 22, 0.3);
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: #fff;
+}
+
+.section-icon {
+    color: var(--secondary-color);
+}
+
+/* Featured Sports List */
+.featured-sports-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.sport-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sport-icon-wrapper {
+    background: rgba(0, 170, 255, 0.1);
+    color: var(--primary-color);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 170, 255, 0.2);
+}
+
+.sport-name {
+    color: #fff;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.sport-desc {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.sport-roles {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 2px solid var(--secondary-color);
+}
+
+.sport-roles strong {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.sport-roles ul {
+    padding-left: 1rem;
+    margin: 0;
+    list-style-type: square;
+}
+
+.sport-roles li {
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* Certs List */
+.certs-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.cert-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(16, 185, 129, 0.1);
+    /* Green tint for safety */
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.cert-issuer {
+    opacity: 0.7;
+    font-size: 0.85rem;
+}
+
+.skills-list {
+    padding-left: 1.5rem;
+    color: var(--text-muted);
+}
+
+.skills-list li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}

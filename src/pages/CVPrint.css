@@ -1,0 +1,307 @@
+/* Existing styles + Updates */
+.cv-print-container {
+    padding-top: 6rem;
+    background: #fff;
+    /* Ensure white background for contrast */
+    min-height: 100vh;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+
+.no-print {
+    margin-bottom: 2rem;
+}
+
+.print-btn {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.a4-page {
+    width: 210mm;
+    min-height: 297mm;
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    color: #1a1a1a;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Header Re-layout */
+.cv-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid #333;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cv-header-left {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.cv-header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.cv-photo-placeholder {
+    width: 80px;
+    height: 80px;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    font-size: 0.8rem;
+    border-radius: 4px;
+}
+
+.cv-name {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #000;
+    line-height: 1.1;
+    margin-bottom: 0.2rem;
+    text-transform: uppercase;
+    font-family: 'Outfit', sans-serif;
+}
+
+.cv-title {
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+    /* Highlight STAPS title */
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.cv-tagline {
+    font-size: 1rem;
+    font-style: italic;
+    color: #555;
+    border-left: 3px solid var(--primary-color);
+    padding-left: 0.8rem;
+}
+
+.cv-contact-info {
+    text-align: right;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.info-line {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+/* Sections */
+.cv-section {
+    margin-bottom: 1.8rem;
+}
+
+.cv-section-title {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 1rem;
+    padding-bottom: 0.2rem;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cv-summary {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Sports Grid */
+.cv-sports-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.cv-sport-item {
+    background: #f9fafb;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+}
+
+.cv-sport-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.cv-sport-roles {
+    list-style: none;
+    padding: 0;
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+.cv-sport-roles li::before {
+    content: "• ";
+    color: var(--secondary-color);
+}
+
+/* Certifications */
+.cv-certs-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.cv-cert-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.cert-icon {
+    color: var(--green-600, #10b981);
+}
+
+.cv-cert-name {
+    font-weight: 600;
+}
+
+.cv-cert-issuer {
+    color: #666;
+}
+
+/* General Items */
+.cv-item {
+    margin-bottom: 1.2rem;
+}
+
+.cv-item-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.2rem;
+}
+
+.cv-role {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.cv-date {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.cv-company {
+    font-size: 0.95rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.cv-bullets {
+    padding-left: 1.2rem;
+    margin: 0;
+}
+
+.cv-bullets li {
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.cv-bullets.compact li {
+    margin-bottom: 0.1rem;
+}
+
+/* Columns */
+.cv-columns {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.cv-col {
+    flex: 1;
+}
+
+.cv-skill-group {
+    margin-bottom: 1.2rem;
+}
+
+.cv-skill-cat {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--primary-color);
+    margin-bottom: 0.3rem;
+}
+
+/* PRINT MEDIA QUERY */
+@media print {
+    @page {
+        margin: 0;
+        size: A4;
+    }
+
+    body * {
+        visibility: hidden;
+    }
+
+    .cv-print-container,
+    .cv-print-container * {
+        visibility: visible;
+    }
+
+    .cv-print-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background: white;
+        /* Ensure print background is white */
+    }
+
+    .no-print {
+        display: none !important;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .a4-page {
+        box-shadow: none;
+        width: 100%;
+        min-height: auto;
+        padding: 10mm;
+        border: none;
+    }
+}
