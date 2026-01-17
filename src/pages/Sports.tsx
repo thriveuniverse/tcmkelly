@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { skillsData } from '../data/skills';
 import { sportsData } from '../data/sports';
 import { certificationsData } from '../data/certifications';
-import { Trophy, Activity, Award, Shield, Mountain, Map, Users } from 'lucide-react';
+import { Trophy, Activity, Shield, Mountain, Map, Users } from 'lucide-react';
 import './Sports.css';
 
 export const Sports = () => {

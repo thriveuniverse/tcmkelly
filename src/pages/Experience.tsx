@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Briefcase, Calendar, MapPin } from 'lucide-react';
+import { Calendar, MapPin } from 'lucide-react';
 import { experienceData } from '../data/experience';
 import { educationData } from '../data/education';
 import './Experience.css';
